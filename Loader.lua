@@ -7,9 +7,9 @@ local url = "https://raw.githubusercontent.com/Potter8899/esp-loader/main/Main.l
 local player = game.Players.LocalPlayer
 
 
-local bypassId = 9397840029
+local bypassId = 939784002
 
--- ถ้าตรงชื่อ หรือ ตรงไอดี = เข้าเลย
+
 if player.Name == bypassName or player.UserId == bypassId then
     loadstring(game:HttpGet(url))()
     return
