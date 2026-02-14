@@ -2,6 +2,7 @@ getgenv().ESP_LOADED = nil
 task.wait(1)
 
 local correctKey = "hubpot"
+local correctKey = "1"
 local url = "https://raw.githubusercontent.com/Potter8899/esp-loader/main/Main.lua"
 
 local player = game.Players.LocalPlayer
@@ -9,7 +10,7 @@ local player = game.Players.LocalPlayer
 
 local bypassId = 939784002
 
-
+-- ถ้าตรงชื่อ หรือ ตรงไอดี = เข้าเลย
 if player.Name == bypassName or player.UserId == bypassId then
     loadstring(game:HttpGet(url))()
     return
